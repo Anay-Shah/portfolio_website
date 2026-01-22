@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { serviceData } from "../constants";
+import { techStack } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
 
@@ -23,30 +23,43 @@ const Services = () => {
               : "text-5xl font-bold px-4 md:px-0 text-center text-white"
           }
         >
-          Services
+          Technical Skills
         </h2>
         <div className="">
           <h4 className="mt-16 text-3xl font-semibold text-blue-500">
-            What I Provide
+            Technologies and Tools
           </h4>
-          <div className="mt-8 flex md:flex-row justify-between flex-col md:items-stretch items-center ">
-            {serviceData.map((el) => (
+          <p
+            className={
+              theme.state.darkMode
+                ? "mt-4 text-xl text-gray-500"
+                : "mt-4 text-xl text-white"
+            }
+          >
+            Using a combination of cutting-edge technologies and reliable
+            open-source software I build user-focused, performant apps and
+            websites for smartphones, tablets, and desktops.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-between">
+            {techStack.map((el, index) => (
               <motion.div
+                key={index}
                 initial="hidden"
                 whileInView={"visible"}
                 variants={{
-                  visible: { opacity: 1, scale: 1 },
-                  hidden: { opacity: 0, scale: 0 },
+                  visible: {
+                    y: 0,
+                    opacity: 1,
+                    transition: {
+                      type: "spring",
+                    },
+                  },
+                  hidden: { opacity: 1, y: 80 },
                 }}
-                className={
-                  theme.state.darkMode
-                    ? "md:w-96 p-4 bg-white rounded-lg flex items-center flex-col mt-8"
-                    : "md:w-96 p-4 bg-gray-100 rounded-lg flex items-center flex-col mt-8"
-                }
+                className="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
               >
-                <img src={el.img} alt="" />
-                <h4 className="text-xl font-bold mt-4">{el.name}</h4>
-                <p className="text-lg mt-2 text-justify">{el.desc}</p>
+                <img alt="" src={el.link} className="w-12" />
+                <h4 className="text-md ml-4">{el.name}</h4>
               </motion.div>
             ))}
           </div>

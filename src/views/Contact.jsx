@@ -89,12 +89,12 @@ const Contact = () => {
               </div>
               <div className="flex justify-between ">
                 <div className="underline">
-                  <a href="mailto:aakash.sh858791@gmail.com">
-                    Send me email directly
+                  <a href="mailto:anayshah29@gmail.com">
+                    Send me an email directly
                   </a>
                 </div>
                 <button className="bg-indigo-500 text-white px-4 py-2 w-40 rounded-md hover:bg-indigo-400">
-                  <a href="mailto:aakash.sh858791@gmail.com">Submit</a>
+                  <a href="mailto:anayshah29@gmail.com">Submit</a>
                 </button>
               </div>
             </form>
@@ -109,25 +109,26 @@ const Contact = () => {
             </a> */}
             <h1 className="text-3xl font-bold">Email</h1>
             <a
-              href="hello"
+              href="mailto:anayshah29@gmail.com"
               className="mb-12 mt-4 font-semibold text-blue-700 block uppercase"
             >
-              aakash.sh858791@gmail.com
+              anayshah29@gmail.com
             </a>
             <h1 className="text-3xl  font-bold">Address</h1>
             <a
               href="hello"
               className="mt-4  mb-12 md:text-right font-semibold text-blue-700 block uppercase"
             >
-              Jhilmil Colony, Delhi
+              Toronto, Ontario
               <br />
-              India
+              Canada
             </a>
             <h1 className="text-3xl  font-bold">Social</h1>
             <ul className="flex">
-              {contactLinks.map((el) => (
+              {contactLinks.filter(el => el.name !== 'Resume').map((el) => (
                 <a
                   href={el.link}
+                  key={el.name}
                   className="md:ml-6 md:mr-0 mr-6 cursor-pointer mt-4 hover:scale-125 flex flex-col justify-center items-center"
                 >
                   <img alt="" src={el.url} />
@@ -147,7 +148,7 @@ const Contact = () => {
       >
         Made with
         <div className="text-red-500 px-2 text-2xl">&#10084;</div>
-        by Aakash Sharma
+        by Anay Shah
       </div>
     </div>
   );

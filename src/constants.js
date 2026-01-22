@@ -1,73 +1,95 @@
+import resumeLogo from './assets/resumeLogo.png';
+import cleanTubeImg from './assets/CleanTube.png';
+
 export const techStack = [
-
-  { name: "C Language", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" },
-
+  { name: "Python", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Java", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+  { name: "C++", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+  { name: "Javascript", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "TypeScript", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" },
-  { name: "Express", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" },
-
-  { name: "NodeJS", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" },
-  { name: "Postman", link: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
-
-  { name: "Dart", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" },
-  { name: "Flutter", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg" },
-  { name: "React Native", link: "https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png" },
+  { name: "SQL", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
   { name: "HTML", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
   { name: "CSS", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" },
-  { name: "Bootstrap", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" },
-  { name: "Redux", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" },
-  { name: "Sass", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" },
-
-  { name: "Javascript", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: "Tailwind CSS", link: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
+  
   { name: "React", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" },
-  { name: "MySQl", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" },
+  { name: "React Native", link: "https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png" },
+  { name: "NodeJS", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" },
+  { name: "Express", link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" },
+  { name: "Flask", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+  
   { name: "Mongo DB", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg" },
-  { name: "Heroku", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" },
-  // { name: "Azure", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-plain.svg" },
+  { name: "PowerBI", link: "https://img.icons8.com/color/48/000000/power-bi.png" },
+  { name: "Pandas", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+  
   { name: "Git", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" },
-  // { name: "Docker", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" },
-  { name: "Firebase", link: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" },
-
-  // { name: "Bash", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" },
-  // { name: "Vim", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" },
-
-  // { name: "VS Code", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-  // {name: "", link: "https://repository-images.githubusercontent.com/59065830/b62be480-45d2-11ea-9989-803db0f9c44d"}
+  { name: "VS Code", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+  { name: "PyCharm", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" },
+  { name: "Jupyter", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" },
 ]
 
 
-export const contactLinks = [{ name: 'Stack Overflow', url: 'https://img.icons8.com/external-tal-revivo-color-tal-revivo/40/000000/external-stack-overflow-is-a-question-and-answer-site-for-professional-logo-color-tal-revivo.png', link: 'https://stackoverflow.com/users/11788531/aakash-sharma' },
-{ name: 'Instagram', url: 'https://img.icons8.com/doodle/40/000000/instagram-new--v2.png', link: 'https://www.instagram.com/aakashsh1999/' },
-{ name: 'Github', url: 'https://img.icons8.com/doodle/40/000000/github--v1.png', link :'https://github.com/aakashsh1999'},
-{ name: 'LinkedIn', url: 'https://img.icons8.com/doodle/40/000000/linkedin--v2.png', link: 'https://www.linkedin.com/in/aakashsh1999/'}
+export const contactLinks = [
+{ name: 'Github', url: 'https://img.icons8.com/doodle/40/000000/github--v1.png', link :'https://github.com/Anay-Shah'},
+{ name: 'LinkedIn', url: 'https://img.icons8.com/doodle/40/000000/linkedin--v2.png', link: 'https://www.linkedin.com/in/anaycshah/'},
+{ name: 'Resume', url: resumeLogo, link: '/AnayShah.pdf'}
 ]
 
 
 
-export const serviceData = [
+export const workExperience = [
   {
-    name: 'Web Application Development',
-    desc: 'Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design user interface design  authoring, including standardised code and proprietary software user experience design and search engine',
+    name: 'Software Development Engineer',
+    company: 'Inclusive Media and Design Centre',
+    period: 'May 2025 - Present',
+    desc: 'Developed a cross-platform mobile app using React Native, TypeScript and MongoDB, integrating OpenAI and Whisper APIs for AI-driven transcription and analysis to support veterans with chronic pain. Implemented accessibility-focused annotation system with pain scales, emotion stickers, location/keyword tags, improving user engagement and data quality by 40%.',
     img: "https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png"
   },
   {
-    name: 'Mobile Application Development',
-    desc: `We provide a range of mobile application development services
-    including custom mobile development on Android platforms, building
-    cross-platform apps, designing user experience and integrating
-    novel mobile interfaces such as chat and voice`,
+    name: 'Software Engineer Intern',
+    company: 'Citi Freight Logistics',
+    period: 'May 2024 - August 2024',
+    desc: 'I built automation pipelines and client-facing dashboards using Python, OCR technologies, React, and Bootstrap to streamline logistics workflows and improve data accuracy.',
     img: "https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-app-development-responsive-web-design-justicon-lineal-color-justicon.png"
   },
-
   {
-    name: 'Backend Development',
-    desc: `Graphic design is a craft where professionals create visual
-    content to communicate messages. By applying visual hierarchy and
-    page layout techniques, designers use typography and pictures to
-    meet users' specific needs and focus on the logic of displaying
-    elements in interactive designs, to optimize the user experience.`,
+    name: 'Data Analyst Intern',
+    company: 'Orient Technologies',
+    period: 'May 2023 - August 2023',
+    desc: 'Built monthly PowerBI dashboards tracking business metrics and sales KPIs, helping monitor real-time performance across 5 product lines and identify top-performing regional markets. Wrote and optimized complex SQL queries to validate customer transaction data, ensuring integrity across 17,000+ records and reducing reporting errors by 40%.',
     img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png"
+  }
+]
+
+
+export const projectData = [
+  {
+    name: 'NLP Finder - Local Semantic File Search',
+    desc: 'NLP Finder is a cross-platform desktop application powered by Ollama that enables you to perform natural language searches over your local files using a completely local AI model. The system generates local text embeddings via Ollama and performs fast semantic cosine similarity using FAISS, allowing users to find files by meaning rather then keywords. It supports multiple file formats, intelligent chunking for large documents, smart result ranking and in-app file previews with highlighted matches.',
+    tech: ['Python', 'Ollama', 'FAISS', 'JavaScript', 'FastAPI', 'React', 'Axios'],
+    github: 'github.com/Anay-Shah/NLP_Finder',
+    img: "https://www.shutterstock.com/image-vector/ai-folder-pentaglow-vector-pixel-600nw-2582083121.jpg"
   },
-
-
+  {
+    name: 'RoboStriker',
+    desc: 'This project uses AI planning techniques to solve robot soccer scenarios. Autonomous robots must coordinate actions such as passing the ball and scoring goals while strategically avoiding opponents. A Prolog-based AI planner generates optimal action plans by reasoning over game states and constraints, and Python is used to create animated visualizations that demonstrate the planned behaviors and outcomes.',
+    tech: ['Prolog', 'Python', 'SWI-Prolog', 'Constraint Logic Programming'],
+    github: 'github.com/Anay-Shah/RoboStriker',
+    img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    name: 'Recreation Club Membership Application',
+    desc: 'Designed and implemented a role-based access database management system with Flask, supporting 3 roles (Member, Coach, Treasurer) with secure authentication using session tokens and encrypted cookies. Developed customer scheduling and payment workflows with attendance tracking and automated payment handling using CSV-based data storage.',
+    tech: ['Python', 'Flask', 'JavaScript', 'OpenStreetMap API', 'HTML/CSS'],
+    github: 'github.com/Anay-Shah/Club_Manager',
+    demo: '',
+    img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+  },
+  {
+    name: 'CleanTube - Minamilist YouTube Chrome Extension',
+    desc: 'CleanTube is a minamilist chrome extension designed to remove visual clutter from YouTube and create a focused, distraction-free viewing experience. The extension allows users to selectively hide elements such as Shorts, homepage recommendations, sidebar suggestions, comments and end-screen prompts through a simple toggle based popup interface on your browser.',
+    tech: ['JavaScript', 'HTML', 'CSS', 'Chrome Extension API (Manifest V3)'],
+    github: 'github.com/Anay-Shah/CleanTube',
+    demo: '',
+    img: cleanTubeImg
+  }
 ]

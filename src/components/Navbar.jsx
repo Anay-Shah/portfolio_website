@@ -14,11 +14,11 @@ const Navbar = () => {
       route: "/",
     },
     {
-      name: "About",
+      name: "Work Timeline",
       route: "about",
     },
     {
-      name: "Services",
+      name: "Technical Skills",
       route: "services",
     },
     {
@@ -50,16 +50,17 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center py-2 md:py-4 md:px-2 pl-2 mx-auto">
           <div className="flex items-center cursor-pointer">
-            <a
-              href="/"
-              className={
-                darkMode
-                  ? "text-xl font-medium text-decoration-none whitespace-nowrap text-black"
-                  : "text-xl font-medium text-decoration-none whitespace-nowrap text-white"
-              }
+            <span
+              style={{
+                fontFamily: "Montserrat, Poppins, sans-serif",
+                fontWeight: 700,
+                fontSize: "1.5rem",
+                letterSpacing: "0.05em",
+              }}
+              className={darkMode ? "text-black" : "text-white"}
             >
-              {`<ꪖꪖƙꪖకꫝ కꫝꪖꪹꪑꪖ/>`}
-            </a>
+              Anay Shah
+            </span>
           </div>
           <div class="hidden justify-between items-center w-full md:flex md:w-auto ">
             <ul

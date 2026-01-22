@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import heroBg from "../assets/webdev.svg";
 import Typical from "react-typical";
 import { contactLinks } from "../constants";
@@ -11,6 +11,18 @@ import cloudDark from "../assets/cloudDark.png";
 const Home = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+  
+  // Memoize the Typical component so it doesn't re-render on theme changes
+  const typicalComponent = useMemo(() => (
+    <Typical
+      steps={[
+        "Hi, I am Anay Shah",
+        500,
+      ]}
+      loop={1}
+      wrapper="span"
+    />
+  ), []);
   return (
     <>
       <div
@@ -27,23 +39,10 @@ const Home = () => {
           <div className="sm:text-center lg:text-left">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <motion.span
-                className={darkMode ? "block text-black" : " text-white"}
+                className={darkMode ? "block text-black" : "block text-white"}
               >
-                Hi, I am Aakash
+                {typicalComponent}
               </motion.span>
-              <span className="block text-blue-500 z-0 lg:inline">
-                <Typical
-                  steps={[
-                    "Front End Developer",
-                    1000,
-                    "Full Stack Developer",
-                    1000,
-                    "Mobile Developer",
-                    1000,
-                  ]}
-                  loop={Infinity}
-                />
-              </span>
             </h1>
             <p
               className={
@@ -52,26 +51,26 @@ const Home = () => {
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-              I am a Front-End / Full-Stack Developer. I am currently working at
-              CloudStok Technologies as a Front-End Developer
+              I am a 21 year old Software Development Engineer based in Toronto.
+              Currently, I am working at Inclusive Media and Design Centre (IMDC), 
+              where we are developing a cross-platform application that empowers Veterans
+              with chronic pain to better understand, analyze, and manage their mental
+              and physical well-being. I am also in my fourth year studying Computer Science
+              at Toronto Metropolitan University. Driven by a passion for building impactful technology, 
+              I aim to create scalable, user-centered solutions that solve real-world problems.
             </p>
-            <div className="flex md:justify-start ">
-              {contactLinks.map((el) => (
+            <div className="flex justify-center lg:justify-start mt-8 lg:ml-40">
+              {contactLinks.map((el, index) => (
                 <a
+                  key={index}
                   href={el.link}
-                  className="mr-5 cursor-pointer mt-8 hover:scale-125"
+                  target={el.name === 'Resume' ? '_blank' : undefined}
+                  rel={el.name === 'Resume' ? 'noopener noreferrer' : undefined}
+                  className="mr-5 cursor-pointer hover:scale-110 transition-transform"
                 >
-                  <img alt="" src={el.url} />
-                  {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
+                  <img alt={el.name} src={el.url} className="w-12 h-12 object-contain" />
                 </a>
               ))}
-            </div>
-            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
-                <Link className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
-                  Resume
-                </Link>
-              </div>
             </div>
           </div>
           <motion.img
