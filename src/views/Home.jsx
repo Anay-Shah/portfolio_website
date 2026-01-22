@@ -63,8 +63,7 @@ const Home = () => {
                 <a
                   key={index}
                   href={el.link}
-                  target={el.name === 'Resume' ? '_blank' : undefined}
-                  rel={el.name === 'Resume' ? 'noopener noreferrer' : undefined}
+                  {...(el.name !== 'Resume' && { target: '_blank', rel: 'noopener noreferrer' })}
                   className="mr-5 cursor-pointer hover:scale-110 transition-transform"
                 >
                   <img alt={el.name} src={el.url} className="w-12 h-12 object-contain" />
