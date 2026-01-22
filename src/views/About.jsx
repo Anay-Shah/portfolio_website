@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { techStack } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
 
