@@ -1,5 +1,5 @@
 import React, { useContext, useMemo } from "react";
-import heroBg from "../assets/webdev.svg";
+import heroBg from "../assets/anay.jpg";
 import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
@@ -25,6 +25,7 @@ const Home = () => {
   return (
     <>
       <div
+        className="overflow-x-hidden w-full"
         style={
           darkMode
             ? { backgroundImage: `url('${cloud}')`, backgroundSize: "cover" }
@@ -32,10 +33,10 @@ const Home = () => {
         }
       >
         <main
-          className="mx-auto max-w-7xl px-4 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center justify-center md:justify-between h-screen"
+          className="mx-auto max-w-7xl px-4 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center justify-center md:justify-between min-h-screen pt-24 pb-12 md:pt-24 lg:pt-0 md:pb-0 overflow-x-hidden"
           id="/"
         >
-          <div className="sm:text-center lg:text-left">
+          <div className="sm:text-center lg:text-left max-w-2xl">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <motion.span
                 className={darkMode ? "block text-black" : "block text-white"}
@@ -46,9 +47,10 @@ const Home = () => {
             <p
               className={
                 darkMode
-                  ? "mt-3 text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-                  : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+                  ? "mt-3 text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light leading-relaxed"
+                  : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light leading-relaxed"
               }
+              style={{ fontFamily: "'Inter', 'Segoe UI', 'Roboto', sans-serif" }}
             >
               I am a 21 year old Software Development Engineer based in Toronto.
               Currently, I am working at Inclusive Media and Design Centre (IMDC), 
@@ -58,7 +60,7 @@ const Home = () => {
               at Toronto Metropolitan University. Driven by a passion for building impactful technology, 
               I aim to create scalable, user-centered solutions that solve real-world problems.
             </p>
-            <div className="flex justify-center lg:justify-start mt-8 lg:ml-40">
+            <div className="flex justify-center lg:justify-start mt-8 lg:ml-40 flex-wrap">
               {contactLinks.map((el, index) => (
                 <a
                   key={index}
@@ -71,23 +73,25 @@ const Home = () => {
               ))}
             </div>
           </div>
-          <motion.img
-            initial="hidden"
-            whileInView={"visible"}
-            variants={{
-              visible: {
-                y: 0,
-                opacity: 1,
-                transition: {
-                  type: "spring",
+          <div className="flex items-center justify-center mt-8 md:mt-0 lg:relative" style={{ left: "-40px", top: "0px" }}>
+            <motion.img
+              initial="hidden"
+              whileInView={"visible"}
+              variants={{
+                visible: {
+                  y: 0,
+                  opacity: 1,
+                  transition: {
+                    type: "spring",
+                  },
                 },
-              },
-              hidden: { opacity: 1, y: 80 },
-            }}
-            src={heroBg}
-            alt=""
-            className="md:w-3/6 hidden sm:block"
-          />
+                hidden: { opacity: 1, y: 80 },
+              }}
+              src={heroBg}
+              alt="Anay Shah"
+              className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full shadow-2xl"
+            />
+          </div>
         </main>
       </div>
     </>

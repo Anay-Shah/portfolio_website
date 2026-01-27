@@ -19,7 +19,7 @@ function App() {
       <>
 
         {!loading ? (
-          <div >
+          <div className="overflow-x-hidden w-full">
             <Navbar />
             <Home />
             <About />

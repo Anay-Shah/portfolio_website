@@ -10,7 +10,7 @@ const Card = ({ project }) => {
         visible: { opacity: 1 },
         hidden: { opacity: 0 },
       }}
-      className="max-w-xl bg-white rounded-lg border border-gray-200 shadow-lg dark:bg-gray-800 dark:border-gray-700 my-8"
+      className="w-full md:w-[48%] lg:w-[48%] bg-white rounded-lg border border-gray-200 shadow-lg dark:bg-gray-800 dark:border-gray-700 my-4 mx-auto"
     >
       <a href={project.demo || project.github || "#"}>
         <img
@@ -21,11 +21,11 @@ const Card = ({ project }) => {
       </a>
       <div className="p-5">
         <a href={project.demo || project.github || "#"}>
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white break-words">
             {project.name}
           </h5>
         </a>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 break-words">
           {project.desc}
         </p>
         <div className="mb-3 flex flex-wrap gap-2">

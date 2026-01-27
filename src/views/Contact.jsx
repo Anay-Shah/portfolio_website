@@ -10,11 +10,11 @@ const Contact = () => {
       id="contact"
       className={
         darkMode
-          ? "bg-gray-100 pt-24 md:h-screen"
-          : "bg-black pt-24 text-white md:h-screen"
+          ? "bg-gray-100 pt-24 overflow-x-hidden flex flex-col"
+          : "bg-black pt-24 text-white overflow-x-hidden flex flex-col"
       }
     >
-      <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 ">
+      <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 overflow-x-hidden flex-grow">
         <h2 className="text-5xl font-bold px-4 md:px-0 text-center z-0">
           Contact
         </h2>
@@ -28,7 +28,7 @@ const Contact = () => {
             like to say hello, send me a message. I'd love to hear from you.
           </p>
         </div>
-        <div className="flex justify-between items-center md:items-stretch  flex-col md:flex-row pb-24">
+        <div className="flex justify-between items-center md:items-stretch  flex-col md:flex-row pb-12">
           <div className="w-full md:pr-8">
             <form>
               <div class="my-6">
@@ -142,8 +142,8 @@ const Contact = () => {
       <div
         className={
           darkMode
-            ? "w-full bg-white text-black text-lg py-3 flex justify-center md:mt-20"
-            : "w-full bg-gray-900 text-white text-lg py-3 flex justify-center md:mt-20"
+            ? "w-full bg-white text-black text-lg py-3 flex justify-center mt-auto"
+            : "w-full bg-gray-900 text-white text-lg py-3 flex justify-center mt-auto"
         }
       >
         Made with

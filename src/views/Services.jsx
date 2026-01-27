@@ -8,12 +8,12 @@ const Services = () => {
   return (
     <div
       className={
-        theme.state.darkMode ? "pb-20 bg-fixed bg-gray-100" : "pb-20 bg-black"
+        theme.state.darkMode ? "pb-20 bg-fixed bg-gray-100 overflow-x-hidden" : "pb-20 bg-black overflow-x-hidden"
       }
       // style={{backgroundImage: `url('https://i.pinimg.com/originals/b0/b1/f5/b0b1f5d33de00e3c21ad29bbba25e31b.gif')`}}>
     >
       <div
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 px-4 pt-20"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 px-4 pt-20 overflow-x-hidden"
         id="services"
       >
         <h2
@@ -40,7 +40,7 @@ const Services = () => {
             open-source software I build user-focused, performant apps and
             websites for smartphones, tablets, and desktops.
           </p>
-          <div className="mt-8 flex flex-wrap justify-between">
+          <div className="mt-8 flex flex-wrap justify-center md:justify-between gap-4">
             {techStack.map((el, index) => (
               <motion.div
                 key={index}
@@ -56,7 +56,7 @@ const Services = () => {
                   },
                   hidden: { opacity: 1, y: 80 },
                 }}
-                className="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+                className="py-2 px-4 bg-gray-50 rounded-lg flex items-center hover:scale-105 md:hover:scale-125 cursor-pointer w-40 md:w-48"
               >
                 <img alt="" src={el.link} className="w-12" />
                 <h4 className="text-md ml-4">{el.name}</h4>
