@@ -65,7 +65,8 @@ const Home = () => {
                 <a
                   key={index}
                   href={el.link}
-                  {...(el.name !== 'Resume' && { target: '_blank', rel: 'noopener noreferrer' })}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mr-5 cursor-pointer hover:scale-110 transition-transform"
                 >
                   <img alt={el.name} src={el.url} className="w-12 h-12 object-contain" />
