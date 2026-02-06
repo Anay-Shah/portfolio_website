@@ -7,6 +7,7 @@ import Services from "./views/Services";
 import Projects from "./views/Projects";
 import LoadingScreen from "./components/LoadingScreen";
 import { ThemeProvider } from "./themeProvider";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -31,6 +32,7 @@ function App() {
         ) : (
           <LoadingScreen />
         )}
+        <Analytics />
       </>
     </ThemeProvider>
 
